@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kecermatan - tes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-n+gg5W5nys+6Bfjq+7fiP6hvqsFP6i8qf35d1c5lGucM1pNU5TCp0bBlZwWIOPL1dGj2qLBoHg4mCqDTc1Kz+A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+    />
+    <link rel="icon" href="/web ujian/polri.png" type="image/png" />
+    <link rel="stylesheet" href="style-kecermatan.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kecermatan</h1>
+    </header>
+
+    <section class="welcome">
+      <div class="container">
+        <div class="row" id="row1">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <div class="row clickable">
+          <div class="box" onclick="changeQuestion(0)">A</div>
+          <div class="box" onclick="changeQuestion(1)">B</div>
+          <div class="box" onclick="changeQuestion(2)">C</div>
+          <div class="box" onclick="changeQuestion(3)">D</div>
+          <div class="box" onclick="changeQuestion(4)">E</div>
+        </div>
+      </div>
+
+      <div id="questions">
+        Soal urutan:
+        <div class="question-box" id="question"></div>
+        <div class="question-box" id="question1"></div>
+        <div class="question-box" id="question2"></div>
+        <div class="question-box" id="question3"></div>
+      </div>
+    </section>
+
+    <div id="timer">
+      Waktu tersisa :<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+
+    <script src="script-kecermatan.js"></script>
+  </body>
+</html>

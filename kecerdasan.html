@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kecerdasan - Tes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+    />
+    <link rel="icon" href="polri.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <h1>Kecerdasan</h1>
+    </header>
+
+    <section class="soal-container">
+      <section class="soal">
+        <section id="question"></section>
+        <hr style="width: 90%; border: 1px solid black; margin-left: 3%" align="left"/>
+        <section id="options"></section>
+
+        <div class="button">
+          <button id="prev">Prev</button>
+          <button id="next">Next</button>
+          <button id="submit" onclick="submitAnswers()">Submit</button>
+        </div>
+      </section>
+      <div class="shortcut">
+        <h3>NOMOR SOAL</h3>
+        <hr style="border: 1px solid black" />
+        <br />
+        <ul id="questionShortcuts">
+          <li><a href="#" onclick="goToQuestion(1)">01</a></li>
+          <li><a href="#" onclick="goToQuestion(2)">02</a></li>
+          <li><a href="#" onclick="goToQuestion(3)">03</a></li>
+          <li><a href="#" onclick="goToQuestion(4)">04</a></li>
+          <li><a href="#" onclick="goToQuestion(5)">05</a></li>
+          <li><a href="#" onclick="goToQuestion(6)">06</a></li>
+          <li><a href="#" onclick="goToQuestion(7)">07</a></li>
+          <li><a href="#" onclick="goToQuestion(8)">08</a></li>
+          <li><a href="#" onclick="goToQuestion(9)">09</a></li>
+          <li><a href="#" onclick="goToQuestion(10)">10</a></li>
+          <li><a href="#" onclick="goToQuestion(11)">11</a></li>
+          <li><a href="#" onclick="goToQuestion(12)">12</a></li>
+          <li><a href="#" onclick="goToQuestion(13)">13</a></li>
+          <li><a href="#" onclick="goToQuestion(14)">14</a></li>
+          <li><a href="#" onclick="goToQuestion(15)">15</a></li>
+          <li><a href="#" onclick="goToQuestion(16)">16</a></li>
+          <li><a href="#" onclick="goToQuestion(17)">17</a></li>
+          <li><a href="#" onclick="goToQuestion(18)">18</a></li>
+          <li><a href="#" onclick="goToQuestion(19)">19</a></li>
+          <li><a href="#" onclick="goToQuestion(20)">20</a></li>
+          <li><a href="#" onclick="goToQuestion(21)">21</a></li>
+          <li><a href="#" onclick="goToQuestion(22)">22</a></li>
+          <li><a href="#" onclick="goToQuestion(23)">23</a></li>
+          <li><a href="#" onclick="goToQuestion(24)">24</a></li>
+          <li><a href="#" onclick="goToQuestion(25)">25</a></li>
+          <li><a href="#" onclick="goToQuestion(26)">26</a></li>
+          <li><a href="#" onclick="goToQuestion(27)">27</a></li>
+          <li><a href="#" onclick="goToQuestion(28)">28</a></li>
+          <li><a href="#" onclick="goToQuestion(29)">29</a></li>
+          <li><a href="#" onclick="goToQuestion(30)">30</a></li>
+          <li><a href="#" onclick="goToQuestion(31)">31</a></li>
+          <li><a href="#" onclick="goToQuestion(32)">32</a></li>
+          <li><a href="#" onclick="goToQuestion(33)">33</a></li>
+          <li><a href="#" onclick="goToQuestion(34)">34</a></li>
+          <li><a href="#" onclick="goToQuestion(35)">35</a></li>
+          <li><a href="#" onclick="goToQuestion(36)">36</a></li>
+          <li><a href="#" onclick="goToQuestion(37)">37</a></li>
+          <li><a href="#" onclick="goToQuestion(38)">38</a></li>
+          <li><a href="#" onclick="goToQuestion(39)">39</a></li>
+          <li><a href="#" onclick="goToQuestion(40)">40</a></li>
+          <li><a href="#" onclick="goToQuestion(41)">41</a></li>
+          <li><a href="#" onclick="goToQuestion(42)">42</a></li>
+          <li><a href="#" onclick="goToQuestion(43)">43</a></li>
+          <li><a href="#" onclick="goToQuestion(44)">44</a></li>
+          <li><a href="#" onclick="goToQuestion(45)">45</a></li>
+          <li><a href="#" onclick="goToQuestion(46)">46</a></li>
+          <li><a href="#" onclick="goToQuestion(47)">47</a></li>
+          <li><a href="#" onclick="goToQuestion(48)">48</a></li>
+          <li><a href="#" onclick="goToQuestion(49)">49</a></li>
+          <li><a href="#" onclick="goToQuestion(50)">50</a></li>
+          <li><a href="#" onclick="goToQuestion(51)">51</a></li>
+          <li><a href="#" onclick="goToQuestion(52)">52</a></li>
+          <li><a href="#" onclick="goToQuestion(53)">53</a></li>
+          <li><a href="#" onclick="goToQuestion(54)">54</a></li>
+          <li><a href="#" onclick="goToQuestion(55)">55</a></li>
+          <li><a href="#" onclick="goToQuestion(56)">56</a></li>
+          <li><a href="#" onclick="goToQuestion(57)">57</a></li>
+          <li><a href="#" onclick="goToQuestion(58)">58</a></li>
+          <li><a href="#" onclick="goToQuestion(59)">59</a></li>
+          <li><a href="#" onclick="goToQuestion(60)">60</a></li>
+          <li><a href="#" onclick="goToQuestion(61)">61</a></li>
+          <li><a href="#" onclick="goToQuestion(62)">62</a></li>
+          <li><a href="#" onclick="goToQuestion(63)">63</a></li>
+          <li><a href="#" onclick="goToQuestion(64)">64</a></li>
+          <li><a href="#" onclick="goToQuestion(65)">65</a></li>
+          <li><a href="#" onclick="goToQuestion(66)">66</a></li>
+          <li><a href="#" onclick="goToQuestion(67)">67</a></li>
+          <li><a href="#" onclick="goToQuestion(68)">68</a></li>
+          <li><a href="#" onclick="goToQuestion(69)">69</a></li>
+          <li><a href="#" onclick="goToQuestion(70)">70</a></li>
+          <li><a href="#" onclick="goToQuestion(71)">71</a></li>
+          <li><a href="#" onclick="goToQuestion(72)">72</a></li>
+          <li><a href="#" onclick="goToQuestion(73)">73</a></li>
+          <li><a href="#" onclick="goToQuestion(74)">74</a></li>
+          <li><a href="#" onclick="goToQuestion(75)">75</a></li>
+          <li><a href="#" onclick="goToQuestion(76)">76</a></li>
+          <li><a href="#" onclick="goToQuestion(77)">77</a></li>
+          <li><a href="#" onclick="goToQuestion(78)">78</a></li>
+          <li><a href="#" onclick="goToQuestion(79)">79</a></li>
+          <li><a href="#" onclick="goToQuestion(80)">80</a></li>
+          <li><a href="#" onclick="goToQuestion(81)">81</a></li>
+          <li><a href="#" onclick="goToQuestion(82)">82</a></li>
+          <li><a href="#" onclick="goToQuestion(83)">83</a></li>
+          <li><a href="#" onclick="goToQuestion(84)">84</a></li>
+          <li><a href="#" onclick="goToQuestion(85)">85</a></li>
+          <li><a href="#" onclick="goToQuestion(86)">86</a></li>
+          <li><a href="#" onclick="goToQuestion(87)">87</a></li>
+          <li><a href="#" onclick="goToQuestion(88)">88</a></li>
+          <li><a href="#" onclick="goToQuestion(89)">89</a></li>
+          <li><a href="#" onclick="goToQuestion(90)">90</a></li>
+          <li><a href="#" onclick="goToQuestion(91)">91</a></li>
+          <li><a href="#" onclick="goToQuestion(92)">92</a></li>
+          <li><a href="#" onclick="goToQuestion(93)">93</a></li>
+          <li><a href="#" onclick="goToQuestion(94)">94</a></li>
+          <li><a href="#" onclick="goToQuestion(95)">95</a></li>
+          <li><a href="#" onclick="goToQuestion(96)">96</a></li>
+          <li><a href="#" onclick="goToQuestion(97)">97</a></li>
+          <li><a href="#" onclick="goToQuestion(98)">98</a></li>
+          <li><a href="#" onclick="goToQuestion(99)">99</a></li>
+          <li><a href="#" onclick="goToQuestion(100)">100</a></li>
+          <!-- Add more items as needed -->
+        </ul>
+      </div>
+    </section>
+
+    <div id="timer">
+      waktu tersisa :<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Vhio Aditya Wardana</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      function goToQuestion(questionNumber) {
+        if (questionNumber >= 1 && questionNumber <= questions.length) {
+          // Adjust to 0-based index before calling loadQuestion
+          loadQuestion(questionNumber - 1);
+          console.log("Navigating to Question " + questionNumber);
+        } else {
+          console.error("Invalid question number: " + questionNumber);
+        }
+      }
+    </script>
+
+    <script>
+      function loadQuestion(index) {
+        // Add the logic to update the displayed question based on the provided index
+        // For example:
+        const questionContainer = document.getElementById("question");
+        questionContainer.innerHTML = questions[index].question;
+        // ... (add logic to update options as well)
+      }
+    </script>
+
+    <script>
+      let duration = 7200; // Durasi pengerjaan dalam detik (contoh: 120 detik = 2 menit)
+      let timerInterval;
+
+      function startTimer() {
+        timerInterval = setInterval(updateTimer, 1000);
+      }
+
+      function updateTimer() {
+        const minutes = Math.floor(duration / 60);
+        const seconds = duration % 60;
+
+        document.getElementById("minutes").innerText = padZero(minutes);
+        document.getElementById("seconds").innerText = padZero(seconds);
+
+        if (duration === 0) {
+          clearInterval(timerInterval);
+          alert("Waktu pengerjaan habis.");
+          // Tambahkan tindakan lain yang ingin dilakukan saat waktu habis
+        }
+
+        duration--;
+      }
+
+      function padZero(value) {
+        return value < 10 ? "0" + value : value;
+      }
+
+      // Panggil fungsi startTimer saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", startTimer);
+
+      // Check if all questions are answered to enable the submit button
+      function checkAllQuestionsAnswered() {
+        // Replace the condition below with your logic to check if all questions are answered
+        const allQuestionsAnswered = true; // Change this condition
+
+        // Enable or disable the submit button based on the condition
+        document.getElementById("submit").disabled = !allQuestionsAnswered;
+      }
+
+      // Call the function to check all questions when the document is loaded
+      document.addEventListener("DOMContentLoaded", checkAllQuestionsAnswered);
+    </script>
+
+    <script>
+      let isTimeUp = false; // Variable to track whether the time is up
+
+      function startTimer() {
+        timerInterval = setInterval(updateTimer, 1000);
+      }
+
+      function updateTimer() {
+        const minutes = Math.floor(duration / 60);
+        const seconds = duration % 60;
+
+        document.getElementById("minutes").innerText = padZero(minutes);
+        document.getElementById("seconds").innerText = padZero(seconds);
+
+        if (duration === 0) {
+          clearInterval(timerInterval);
+          isTimeUp = true; // Set the variable to true when time is up
+          alert("Waktu pengerjaan habis.");
+          // Tambahkan tindakan lain yang ingin dilakukan saat waktu habis
+        }
+
+        duration--;
+      }
+
+      function checkAllQuestionsAnswered() {
+        const allQuestionsAnswered = true; // Replace with your logic to check if all questions are answered
+
+        // Enable or disable the submit button based on the condition and whether the time is up
+        document.getElementById("submit").disabled =
+          !allQuestionsAnswered || isTimeUp;
+        // Disable navigation buttons if the time is up
+        document.getElementById("next").disabled = isTimeUp;
+        document.getElementById("prev").disabled = isTimeUp;
+      }
+    </script>
+  </body>
+</html>

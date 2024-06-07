@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kepribadian - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-n+gg5W5nys+6Bfjq+7fiP6hvqsFP6i8qf35d1c5lGucM1pNU5TCp0bBlZwWIOPL1dGj2qLBoHg4mCqDTc1Kz+A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+    />
+    <link rel="icon" href="polri.png" type="image/png" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        background-image: linear-gradient(
+          109.6deg,
+          rgba(45, 116, 213, 1) 11.2%,
+          rgba(121, 137, 212, 1) 91.2%
+        );
+        color: #333;
+      }
+
+      .welcome {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 85%;
+        margin-top: 5%;
+        margin-left: 4%;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .judul {
+        margin-bottom: 10px;
+      }
+
+      .tanggal-keterangan {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .tanggal {
+        background-color: #38419d;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.521);
+        margin-bottom: 10px; /* Add some margin for spacing */
+        padding-bottom: 10px;
+      }
+
+      .tanggal p {
+        font-size: 1em;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .keterangan {
+        text-align: left;
+        width: 93%; /* Adjust the width as needed */
+        margin-bottom: 10px; /* Add some margin for spacing */
+      }
+
+      .keterangan p {
+        font-weight: 600;
+        font-size: 1em;
+      }
+
+      .cara {
+        margin-bottom: 20px;
+      }
+
+      .cara ol {
+        padding-left: 20px;
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+
+      button {
+        background-color: #38419d;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0 5px;
+        font-weight: 600;
+        margin-bottom: 3%;
+      }
+
+      button:hover {
+        background-color: #ffffff;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: background-color 0.3s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.521);
+        margin-bottom: 3%;
+      }
+
+      button a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      button a:hover {
+        text-decoration: none;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="welcome">
+      <div class="judul">
+        <h2>PSIKOTES - POLRI</h2>
+        <h3>Tes - Kepribadian</h3>
+      </div>
+
+      <div class="tanggal-keterangan">
+        <div class="tanggal" id="tanggalContainer"></div>
+
+        <div class="keterangan">
+          <p>
+            || 45 menit <br />
+            jumlah soal : 120
+          </p>
+        </div>
+      </div>
+
+      <div class="cara">
+        <ol>
+          <li>Baca soal dengan baik dan benar</li>
+          <li>Dilarang mencontek</li>
+          <li>Gunakan waktu semaksimal mungkin</li>
+          <li>
+            Berapapun nilai kamu, jika kamu mengerjakan dengan curang maka tidak
+            menjamin kamu lolos tes berikutnya
+          </li>
+          <li>Waktu kamu 45 menit</li>
+          <li>Good luck!</li>
+        </ol>
+      </div>
+
+      <div class="button">
+        <button id="next"><a href="kepribadian.html">Berikutnya</a></button>
+        <button id="next"><a href="index.html">Kembali</a></button>
+      </div>
+
+      <script>
+        const currentDate = new Date();
+        const day = currentDate.getDate();
+        const month = currentDate.toLocaleString("default", { month: "short" });
+
+        document.getElementById(
+          "tanggalContainer"
+        ).innerHTML = `<p>${day}<br>${month}</p>`;
+      </script>
+    </section>
+  </body>
+</html>
